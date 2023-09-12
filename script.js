@@ -1,17 +1,17 @@
 const poga = document.getElementById("poga");
 const kvadrats = document.getElementById("kvadrats");
-const background = document.querySelector(".background");
+const lauks = document.querySelector(".lauks");
 let klikski = 0;
 
 poga.addEventListener("click", () => {
     klikski++;
     poga.textContent = `CLICKS: ${klikski}`;
 
-    const backgroundWidth = background.clientWidth;
-    const backgroundHeight = background.clientHeight;
+    const lauksWidth = lauks.clientWidth;
+    const lauksHeight = lauks.clientHeight;
 
-    const randomX = Math.floor(Math.random() * (backgroundWidth - kvadrats.clientWidth));
-    const randomY = Math.floor(Math.random() * (backgroundHeight - kvadrats.clientHeight));
+    const randomX = Math.floor(Math.random() * (lauksWidth - kvadrats.clientWidth));
+    const randomY = Math.floor(Math.random() * (lauksHeight - kvadrats.clientHeight));
     
     const randomColor = getRandColor();
 
